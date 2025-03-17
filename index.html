@@ -69,11 +69,22 @@
 						<p>Descripción del producto 1</p>
 						<span class="precio">35.00</span> €
 						<span class="precio-envio">Envío: 5.00 €</span>
+						<div class="product-options">
+							<label for="quantity1">Cantidad:</label>
+							<select id="quantity1" name="quantity1">
+								<option value="1">1</option>
+							</select>
+							<label for="size1">Talla:</label>
+							<select id="size1" name="size1">
+								<option value="S">10oz</option>
+								<option value="M">14oz</option>
+								<option value="L">16oz</option>
+							</select>
+						</div>
 					</div>
 					<button onclick="eliminarProducto(event)">
 						<span class="material-symbols-outlined">delete</span>
 					</button>
-
 				</div>
 				<div id="producto2" class="producto">
 					<img src="img/pantalon.jpg" alt="Producto 2">
@@ -83,6 +94,19 @@
 						<span class="precio-original">50.00</span> €
 						<span class="precio-descuento">29.99</span> €
 						<span class="precio-envio">Envío: 5.00 €</span>
+						<div class="product-options">
+							<label for="quantity2">Cantidad:</label>
+							<select id="quantity2" name="quantity2">
+								<option value="1">1</option>
+							</select>
+							<label for="size2">Talla:</label>
+							<select id="size2" name="size2">
+								<option value="S">S</option>
+								<option value="M">M</option>
+								<option value="L">L</option>
+								<option value="XL">XL</option>
+							</select>
+						</div>
 					</div>
 					<button onclick="eliminarProducto(event)">
 						<span class="material-symbols-outlined">delete</span>
@@ -97,6 +121,7 @@
 			<div id="banner" class="col-md-12">
 				<img src="img/banner.jpg" alt="banner">
 			</div>
+			
 			<!-- NO TOCAR DE AQUÍ PARA ABAJO -->
 		</div>
 	</div>
