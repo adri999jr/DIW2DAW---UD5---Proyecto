@@ -10,8 +10,16 @@ $(document).ready(() => {
         // Actualiza el contenido del span en el carrito de compras
         $('#shopping-cart span').text(contador);
     }
+    // Desplazarse hacia arriba cuando se hace clic en la flecha
+    $("#totop").click(function () {
+        alert("pulso flecha");
+        $("html, body").animate({ scrollTop: 0 }, 500);
+        return false;
+    });
     ajustarBanner();
     actualizarResumenPrecios();
+
+ 
 });
 
 function eliminarProducto(event) {
@@ -74,11 +82,8 @@ $(window).on('scroll', () => {
     }
 });
 
-// Desplazarse hacia arriba cuando se hace clic en la flecha
-$("#totop").click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 500);
-    return false;
-});
+
+
 
 
 function ajustarBanner() {
