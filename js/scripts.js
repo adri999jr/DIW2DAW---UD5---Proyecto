@@ -12,7 +12,6 @@ $(document).ready(() => {
     }
     // Desplazarse hacia arriba cuando se hace clic en la flecha
     $("#totop").click(function () {
-        alert("pulso flecha");
         $("html, body").animate({ scrollTop: 0 }, 500);
         return false;
     });
